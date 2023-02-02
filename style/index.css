@@ -83,13 +83,13 @@
           backdrop-filter: invert(10%);
 }
 .social .social__img_facebook {
-  background-image: url(/img/FaceBook.svg);
+  background-image: url(./../img/FaceBook.svg);
 }
 .social .social__img_inst {
-  background-image: url(/img/instagram.svg);
+  background-image: url(./../img/instagram.svg);
 }
 .social .social__img_twitter {
-  background-image: url(/img/Twitter.svg);
+  background-image: url(./../img/Twitter.svg);
 }
 
 .btn {
@@ -196,7 +196,7 @@ input {
   border: 1px solid rgba(82, 82, 82, 0.4);
   border-radius: 15px;
   background: #283036;
-  background-image: url(/img/search.svg);
+  background-image: url(./../img/search.svg);
   background-repeat: no-repeat;
   background-position: 20px center;
 }
