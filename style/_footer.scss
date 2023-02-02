@@ -1,0 +1,46 @@
+.footer {
+   display: flex;
+   padding: 70px 0;
+   span {
+      display: inline-block;
+   }
+}
+table {
+   width: 100%;
+   text-align: left;
+   a {
+      cursor: pointer;
+   }
+   th {
+      font-weight: normal;
+      padding: 10px 8px;
+      color: $color-alpha;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+   }
+   td {
+      padding: 9px 8px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: $color-beta;
+   }
+}
+
+.footer__hello {
+   .footer__hello-copyright {
+      margin: 25px 0;
+      color: $color-alpha;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+   }
+   .footer__hello-desc {
+      width: 250px;
+      color: $color-beta;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+   }
+}

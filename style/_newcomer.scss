@@ -1,0 +1,38 @@
+.newcomer {
+   display: flex;
+   margin-bottom: 200px;
+}
+.newcomer__hello {
+   width: 50%;
+   .newcomer__hello-title {
+      color: $color-alpha;
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 130%;
+   }
+   .newcomer__hello-desc {
+      color: $color-beta;
+      margin-bottom: 60px;
+      width: 427px;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+   }
+   .btn {
+      width: 198px;
+      height: 58px;
+   }
+}
+
+.newcomer__cards {
+   width: 50%;
+   display: flex;
+   justify-content: center;
+   flex-flow: wrap;
+   margin-top: -40px;
+   .btn {
+      width: 106px;
+      height: 42px;
+   }
+}

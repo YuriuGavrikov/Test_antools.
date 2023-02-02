@@ -1,0 +1,36 @@
+.brand {
+   height: 253px;
+   padding: 55px;
+   margin-bottom: 200px;
+   border-radius: 25px;
+   border: 1px solid rgb(82, 82, 82, 0.5);
+   background: -moz-linear-gradient(
+      330deg,
+      $bg-hover-color 84%,
+      rgba(253, 93, 0, 0.29) 100%
+   );
+   background: -webkit-linear-gradient(
+      330deg,
+      $bg-hover-color 84%,
+      rgba(253, 93, 0, 0.29) 100%
+   );
+   background: linear-gradient(
+      330deg,
+      $bg-hover-color 84%,
+      rgba(253, 93, 0, 0.29) 100%
+   );
+}
+.brand__title {
+   margin-bottom: 55px;
+   color: rgba(255, 255, 255, 0.8);
+   text-align: center;
+   font-weight: 500;
+   font-size: 24px;
+   line-height: 36px;
+}
+.brand__items {
+   display: flex;
+   justify-content: space-around;
+}
+.brand__item {
+}

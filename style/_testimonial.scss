@@ -1,0 +1,159 @@
+.testimonial {
+   margin-bottom: 200px;
+}
+.carousel-wrapper {
+   height: 400px;
+   position: relative;
+}
+.carousel-item {
+   display: flex;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: 25px 50px;
+   opacity: 0;
+   transition: all 0.5s ease-in-out;
+}
+.arrow {
+   border: solid $color-beta;
+   border-width: 0 3px 3px 0;
+   display: inline-block;
+   padding: 12px;
+}
+
+.arrow-prev {
+   left: -30px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%) rotate(135deg);
+}
+
+.arrow-next {
+   right: -30px;
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%) rotate(-45deg);
+}
+
+/*Select every element*/
+[id^="item"] {
+   display: none;
+}
+
+.item-1 {
+   z-index: 2;
+   opacity: 1;
+}
+
+*:target ~ .item-1 {
+   opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+   opacity: 1;
+}
+
+#item-2:target ~ .item-2,
+#item-3:target ~ .item-3 {
+   z-index: 3;
+   opacity: 1;
+}
+// -----------------------------------
+.circle {
+   width: 50%;
+   text-align: center;
+   position: relative;
+   .circle__small {
+      position: absolute;
+      &-blue {
+         top: 10px;
+         left: 70px;
+      }
+      &-orange {
+         top: 200px;
+         left: 340px;
+      }
+   }
+   .circle__main {
+   }
+   .circle__man {
+      height: 500px;
+      position: absolute;
+      left: 100px;
+      top: -90px;
+   }
+   .circle__name {
+      position: absolute;
+      width: 265px;
+      height: 91px;
+      left: 220px;
+      top: 280px;
+      backdrop-filter: blur(25px);
+      border-radius: 8px;
+      border: 1px solid rgb(82, 82, 82, 0.3);
+      padding: 10px 20px;
+      text-align: left;
+      .name__title {
+         font-weight: 500;
+         font-size: 26px;
+         line-height: 39px;
+         color: rgba(255, 255, 255, 0.78);
+      }
+      .name__job {
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 24px;
+         color: $color-beta;
+      }
+      background: -moz-linear-gradient(
+         130deg,
+         $bg-hover-color 84%,
+         rgb(0 132 253 / 29%) 100%
+      );
+      background: -webkit-linear-gradient(
+         130deg,
+         $bg-hover-color 84%,
+         rgb(0 132 253 / 29%) 100%
+      );
+      background: linear-gradient(
+         130deg,
+         $bg-hover-color 84%,
+         rgb(0 132 253 / 29%) 100%
+      );
+   }
+}
+.carousel-desc {
+   width: 50%;
+   padding: 50px 20px 20px 20px;
+   position: relative;
+   .carousel-desc__marks {
+      position: absolute;
+      top: 0;
+      left: -35px;
+   }
+   span {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 30px;
+      color: rgba(255, 255, 255, 0.78);
+   }
+}
+.carousel__dots {
+   display: flex;
+   position: absolute;
+   bottom: -80px;
+   left: 46%;
+
+   .carousel__dot {
+      width: 44px;
+      height: 8px;
+      margin: 0 10px;
+      border-radius: 4px;
+      background: $bg-hover-color;
+      &-active {
+         background: $color-gamma;
+      }
+   }
+}

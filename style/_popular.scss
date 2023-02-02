@@ -1,0 +1,25 @@
+.popular {
+   padding-top: 200px;
+   margin-bottom: 200px;
+}
+.popular__head {
+   text-align: center;
+   margin-bottom: 90px;
+   .popular__head-title {
+      font-size: 48px;
+      line-height: 130%;
+      color: $color-alpha;
+      margin-bottom: 25px;
+   }
+   .popular__head-desc {
+      font-size: 18px;
+      line-height: 30px;
+      color: $color-beta;
+   }
+}
+.popular__cards {
+   display: flex;
+   justify-content: center;
+   flex-flow: wrap;
+   margin-bottom: 100px;
+}

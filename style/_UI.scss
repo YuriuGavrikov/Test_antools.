@@ -1,0 +1,149 @@
+.btn {
+   width: 118px;
+   height: 48px;
+   border-radius: 8px;
+   border: none;
+   cursor: pointer;
+   &_alpha {
+      background: $btn-color-alpha;
+      color: $color-alpha;
+   }
+   &_transparent {
+      border: none;
+      background: $btn-color-beta;
+      color: $color-beta;
+      &:hover {
+         background: $bg-hover-color;
+      }
+   }
+   &_favourites {
+      margin: 0 5px;
+      cursor: pointer;
+   }
+   &_load {
+      border: 1px solid rgb(82, 82, 82);
+      color: $color-gamma;
+      display: block;
+      margin: 0 auto;
+   }
+}
+
+.card {
+   border: 1px solid transparent;
+   border-radius: 15px;
+   background: transparent;
+   &-big {
+      width: 394px;
+      height: 296px;
+      margin: 40px 5px;
+      padding: 33px;
+      .card__desc {
+         font-size: 16px;
+      }
+   }
+   &-small {
+      padding: 28px;
+      width: 288px;
+      margin: 20px 5px;
+      height: 284px;
+      .card__desc {
+         font-size: 14px;
+      }
+   }
+   &:hover {
+      margin-top: 10px;
+      transition: 0.2s;
+      background: -moz-linear-gradient(
+         35deg,
+         $bg-hover-color 84%,
+         rgba(253, 93, 0, 0.29) 100%
+      );
+      background: -webkit-linear-gradient(
+         35deg,
+         $bg-hover-color 84%,
+         rgba(253, 93, 0, 0.29) 100%
+      );
+      background: linear-gradient(
+         35deg,
+         $bg-hover-color 84%,
+         rgba(253, 93, 0, 0.29) 100%
+      );
+
+      border: 1px solid rgb(82, 82, 82, 0.4);
+   }
+
+   .card__head {
+      display: flex;
+      .card__head-logo {
+         .card__head-img {
+         }
+      }
+      .card__head-desc {
+         padding: 0 0 0 30px;
+         .card__head-title {
+            font-size: 24px;
+            line-height: 36px;
+            color: $color-alpha;
+         }
+         .card__head-price {
+            font-size: 18px;
+            line-height: 27px;
+            color: $color-gamma;
+         }
+      }
+   }
+   .card__desc {
+      padding: 30px 0;
+      font-weight: 400;
+      line-height: 30px;
+      color: $color-alpha;
+   }
+
+   .card__btns {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .card__btns-favourites {
+         height: 24px;
+      }
+      .card__btns-visit {
+      }
+   }
+}
+
+input {
+   outline: none;
+}
+
+.input-wrapper {
+   .form {
+      display: inline-block;
+      position: relative;
+   }
+   .input {
+      height: 64px;
+      width: 500px;
+      padding: 5px 140px 5px 50px;
+      border: 1px solid rgb(82, 82, 82, 0.4);
+      border-radius: 15px;
+      background: #283036;
+      background-image: url(/img/search.svg);
+      background-repeat: no-repeat;
+      background-position: 20px center;
+   }
+   .btn_input {
+      position: absolute;
+      top: 7px;
+      right: 10px;
+   }
+}
+
+.select {
+   border: none;
+   background: none;
+   outline: none;
+   color: $color-beta;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 24px;
+}

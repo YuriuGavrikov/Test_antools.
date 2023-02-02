@@ -1,0 +1,43 @@
+$color-alpha: #fff;
+$color-beta: rgba(255, 255, 255, 0.55);
+$color-gamma: #ff6e30;
+$btn-color-alpha: #ff6e30;
+$btn-color-beta: transparent;
+$bg-hover-color: rgba(40, 48, 54, 0.6);
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+@import "header.scss";
+@import "hero.scss";
+@import "UI.scss";
+@import "popular.scss";
+@import "brand.scss";
+@import "newcomer.scss";
+@import "testimonial.scss";
+@import "join.scss";
+@import "footer.scss";
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Poppins";
+   font-style: normal;
+}
+a {
+   text-decoration: none;
+   color: $color-beta;
+}
+.wrapper {
+   background: #1e252b;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   overflow: auto;
+}
+.container {
+   max-width: 1224px;
+   margin: 0 auto;
+}
